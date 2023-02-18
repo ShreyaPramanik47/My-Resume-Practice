@@ -1,0 +1,332 @@
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+.wrapper{
+    background-color:rgb(7, 7, 7) ;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.container{ 
+    width: 90vw;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    /* height: 243vh; */
+}
+.myinfo{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 12px #646464;
+}
+.imgname{
+    position: relative;
+}
+.imgname img{
+    width: 27vw;
+    height: 46vh;
+    object-fit: cover;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    /* position: absolute;
+    z-index: -1; */
+
+}
+.imgname img:hover{
+    transform: scale(1.03);
+    transition: 0.4s ease-in;
+    filter: drop-shadow(0 0 10px #333);
+    border-radius: 0.6rem;
+}
+/* .imgname h2{
+    font-family: math;
+    font-size: 1.6rem;
+    text-align: center;
+    
+} */
+
+.myinfo-section-heading{
+  color: rgb(157, 184, 226);
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border: 2px solid rgb(29, 29, 29);
+  padding: 2rem;
+  border-radius: 6px;
+  background-image: linear-gradient(to right bottom, rgb(20, 20, 20) 50%,rgb(26, 26, 26) 89%);
+  /* box-shadow:  0 0 12px #292929; */
+}
+.info2{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.info2 p{
+    padding-bottom: 0.6rem;
+    color: rgb(195, 195, 195);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.info2 img{
+    height: 20px ;
+    width: 20px;
+    padding-right: 0.2rem;
+    /* animation-name: iconstyle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+    position: relative;
+
+} 
+.info2 img:hover{
+    transition: all 1.5s ease-out 0s;
+    transform: scale(1) rotateY(180deg);
+    padding-right: 0.3rem;
+    
+}
+/* @keyframes iconstyle {
+    from{
+        scale: 1;
+        
+    }
+    to{
+        scale: 1.1;
+    }
+    
+} */
+
+/* --------------- */
+.skill h2{
+    /* text-align: center; */
+    color: rgb(236, 234, 234);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+.percentage .name{
+    color: rgb(167, 166, 166);
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+}
+.percentage{
+    margin-left: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.percnt{
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 0.6rem ;
+    text-align: center;
+    font-family: math;
+    /* width: 24vw; */
+    position: relative;
+    z-index: 1;
+    background-color: rgb(155, 183, 208);
+}
+#p6 {
+    width: 60%;
+}
+#p9{
+    width: 90%;
+}
+#p8{
+    width: 85%;
+}
+#p7{
+    width: 70%;
+}
+#p5{
+    width: 50%;
+}
+.pp{
+     transition: width 2s;
+    /* width: 100%; */
+}
+.pp::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(46, 106, 163,0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius:1rem ;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: all 1.5s ease-out;
+}
+.pp:hover::before {
+    transform: scaleX(1);
+  
+    /* border-radius:1rem ; */
+  }
+  .pp:hover {
+    color: rgb(230, 213, 213);
+    cursor: pointer;
+    
+  }
+  .langg h2{
+    /* text-align: center; */
+    color: rgb(236, 234, 234);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.6rem;
+}
+  .lang-condition{
+    margin-top: 0.6rem;
+    margin-left: 1.5rem;
+  }
+  .langname{
+    color: #d8d7d7;
+    padding-bottom: 1.3rem;
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    
+  }
+  .langname span{
+    color: #646464;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  /* ------ */
+  .workedu{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .workexp{
+    padding: 2rem;
+    background-color: rgb(20, 20, 20);
+    border-radius: 0.6rem;
+    box-shadow: 0 0 12px #646464;
+    width: 57vw;
+  }
+  #firstheading{
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+  #firstheading img{
+    height: 3rem;
+    padding-right:15px ;
+   
+  }
+  #firstheading  p{
+    font-size: 2.5rem;
+    font-family: 'Signika', sans-serif;
+    /* padding-left: ; */
+  }
+  .frontend .head{
+    color: #d8d7d7;
+    font-size: 1.3rem;
+    font-weight: 450;
+    padding-bottom: 0.6em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .current{
+    color:rgb(154, 204, 250);
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .current img{
+    height: 1.2rem;
+    padding-right: 5px;
+  }
+  .current span{
+    background-color: rgb(137, 192, 243);
+    color: black;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4em;
+    padding-bottom: 0.3em;
+  }
+  .current span:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(84, 118, 150);
+  }
+  .frontend {
+    margin-bottom: 2.5rem;
+  }
+  .paragraph{
+    color: rgb(167, 166, 166);
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+  }
+
+
+  /* ---- */
+  .education{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 8px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: rgb(20, 20, 20);
+    border-radius: 0.6rem;
+    box-shadow: 0 0 12px #646464;
+    width: 57vw;
+  }
+  #edufirstheading{
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+  #edufirstheading img{
+    height: 3rem;
+    padding-right:23px ;
+   
+  }
+  #edufirstheading  p{
+    font-size: 2.5rem;
+    font-family: 'Signika', sans-serif;
+    /* padding-left: ; */
+  }
+
+ 
+
+
+ 
+
+  
+
+
+
+
+
+
+
